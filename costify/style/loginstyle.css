@@ -1,0 +1,228 @@
+* {
+    font-family: 'inter', sans-serif;
+}
+
+body{
+    display: flex;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background-color: #ffffff;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+main {
+    display: flex;
+    background-color: #ffffff;
+    width: 100%;
+    align-items: center;   
+}
+
+.divition_dinamic{
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    overflow: hidden;
+
+    background-image: linear-gradient(
+        rgba(18, 59, 93, 0.7),
+        rgba(18, 59, 93, 0.7)
+    ), url("/assets/sector.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.divition_dinamic::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 10px;
+    height: 100vh;
+    background: linear-gradient(
+        to right,
+        rgba(18, 59, 93, 0.7),
+        rgba(243, 246, 248, 1)
+    ); 
+}
+
+.divition_dinamic > div {
+    position: relative;
+    height: 100vh;
+}
+
+.divition_dinamic h1{
+    position: absolute;
+    font-size: 32px;
+    font-weight: 600;
+    max-width: 450px;
+    line-height: 1.3;
+    top: 50%;
+    left: 5%;
+    color: #ffffff;
+    z-index: 2;
+}
+
+.divition_dinamic p{
+    position: absolute;
+    margin: 40px 0px;
+    font-size: 14px;
+    font-weight: 450;
+    max-width: 400px;
+    line-height: 1.2;
+    color: #ffffff;
+    top: 60%;
+    left: 5%;
+    z-index: 2;
+
+}
+
+.divition_dinamic img{
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+.divition_login{
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    min-height: 100vh;
+    background-color: #f3f6f8;
+
+}
+
+.divition_login img{
+    width: 85px;
+    height: 85px;
+    object-fit: contain;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+}
+
+
+.login_card{
+    background-color: #ffffff;
+    padding: 0 54px;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(242, 140, 40, 0.10);
+}
+
+.login_card:has(.register_form:not(.oculto)) {
+    width: 70%;
+}
+
+.divition_login:has(.register_form:not(.oculto)) {
+    justify-content: flex-start;
+    height: auto;
+    min-height: 100vh;
+    overflow: auto;
+}
+
+.login_card:has(.register_form:not(.oculto)) .divition_container{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.login_card:has(.register_form:not(.oculto))
+.register_form .campo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login_card:has(.register_form:not(.oculto))
+.register_form .campo_completo {
+    grid-column: 1/ -1;
+}
+
+.divition_header{
+    text-align: center;
+    color: #123B5D;
+}
+
+
+.divition_container{
+    display: grid;
+    gap: 20px;
+    color: #123B5D;
+    font-size: 16;
+    font-weight: 600;
+}
+
+.divition_container input{
+    border: 1px solid #e8edf1;
+    padding: 16px;
+    border-radius: 7px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.divition_container input:focus{
+    border: 1.5px solid #f28c28
+    
+}
+
+.submit {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.submit button {
+    width: 100%;
+    background-color: #f28c28;
+    color: #ffffff;
+    margin: 20px 0px 20px 0px;
+    padding: 14px;
+    font-size: 14 24px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    border-color: #f28c28;
+    transition: transform 0.3s ease;
+
+}
+
+.submit button:hover {
+    transform: translateY(-3px);
+}
+
+.divition_footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+
+.divition_footer a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #123B5D;
+}
+
+.oculto {
+    display: none !important;
+}
+
+.login_form {
+    display: block;
+}
+
+@media (max-width: 650px) {
+
+}
+
+
+
+
+

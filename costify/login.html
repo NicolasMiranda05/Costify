@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Costify</title>
+    <link rel="stylesheet" href="../style/loginstyle.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <main>
+
+        <!--SECCION DE IMAGENES-->
+
+        <section class="divition_dinamic" id="carrusel">
+            <div>
+                <h1>Te ayudamos a contruir tu proyecto</h1>
+                <p>Gestiona tus costos, optimizalos y organizalos</p>
+            </div>
+        </section>
+
+        <section class="divition_login">
+
+            <img src="/assets/Cositfy_logo_original.png" alt="Costify">
+
+            <div class="login_card">
+                <div class="divition_header">
+                    <h1>Inicia Sesión</h1>
+                    <p>Inicia sesión para acceder a los beneficios de Costify</p>
+                </div>
+
+            
+
+            <form class="login_form">
+
+                <div class="divition_container">
+                    <label for="correo_login">Correo electrónico</label>
+                    <input type="email" id="correo_login" name="correo" required
+                    placeholder="   example@gmail.com"
+                    >
+
+                    <label for="contrasena_login">Digita tu contraseña</label>
+                    <input type="password" id="contrasena_login" name="contrasena" required>
+                </div>
+                    
+                <div class="submit">
+                    <button type="submit">Iniciar Sesión</button>
+                </div>
+
+            </form>
+
+            <form class="register_form oculto">
+                
+                <div class="divition_container">
+
+                    <div class="campo">
+                        <label for="nombre_registro">Nombre completo</label>
+                        <input type="text" id="nombre_registro" name="nombre" required>
+                    </div>
+                    
+                    <div class="campo">
+                        <label for="telefono_registro">Teléfono</label>
+                        <input type="tel" id="telefono_registro" name="telefono" required>
+                    </div>
+
+                    <div class="campo campo_completo">
+                        <label for="correo_registro">Correo electrónico</label>
+                        <input type="email" id="correo_registro" name="correo" required
+                                placeholder="   example@gmail.com">
+                    </div>
+        
+                    <div class="campo campo_completo">
+                        <label for="empresa_registro">Nombre de tu empresa (opcional)</label>
+                        <input type="text" id="empresa_registro" name="empresa">
+                    </div>
+
+                    <div class="campo">
+                        <label for="contrasena_registro">Contraseña</label>
+                        <input type="password" id="contrasena_registro" name="contrasena" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="confirmar_contrasena_registro">Confirmar contraseña</label>
+                        <input type="password" id="confirmar_contrasena_registro" name="confirmar_contrasena" required>
+                    </div>
+                   
+                    
+                    
+
+                </div>
+                    
+                <div class="submit">
+                    <button type="submit">Registrarse</button>
+                </div>                
+
+            
+
+            </form>
+            
+            <div class="divition_footer">
+                <a href="" class="enlace_login">Iniciar sesión</a>
+            </div>
+
+            <div class="divition_footer">
+                <a href="#" class="enlace_recuperar" >Restablece tu contraseña</a>
+                <a href="#" class="enlace_registro">Registrarse</a>
+            </div>
+            <br>
+            
+            
+        </section>
+
+        
+
+
+    </main>
+
+    <script src="main/login.js"></script>
+    <script src="/main/carrusel.js"></script>
+
+</body>
+</html>

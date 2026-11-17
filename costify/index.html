@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Costify | Gestion de costos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+    <header class="header">
+    
+        <a href="#inicio" class="header_brand">
+            <img src="assets/costify_logo_transparente.png"
+                alt="Logo de costify"
+            >
+
+            <span>Costify</span>
+        </a>    
+            <nav class="header_nav">
+                <a href="#inicio">Inicio</a>
+                <a href="#funciones">Caracteristicas</a>
+                <a href="#calculator">Demo</a> 
+                <a href="#contacto">Contacto</a>  
+                <a href="login.html"><i class="fa-regular fa-user"></i></a>
+            </nav>
+    
+    </header>
+    
+
+        <section id="inicio" class="hero">
+
+            <div class="hero_content">
+                
+                <span class="hero_tag">
+                    GESTIÒN INTELIGENTE
+                </span>
+                
+                <h2>
+                    Gestiona tus costos
+                    de manera inteligente
+                </h2>
+
+                <p>
+                    Optimiza tus procesos y 
+                    administra tus proyectos.
+                </p>
+
+                <a href="#funciones" class="hero_button">
+                    Comienza ya
+                </a>
+
+            </div>
+        </section>
+
+        <section class="sector">
+            
+            <div class="sector_content">
+
+                <span class="sector_tag">
+                    NUESTRO SECTOR
+                </span>
+                
+                <h2>
+                    Tecnología para el sector estructural
+                    y arquitectónico.
+                </h2>
+
+                <p>
+                  Costify facilita la gestiòn de costos
+                  para tu empresa, aportando optimización y organización.  
+                </p>
+
+            </div>
+
+            <div class="sector_image">
+                
+                <img
+                    src="assets/sector.jpg"
+                    alt="Planos e implementos para gestionar costos"
+                >    
+            </div>
+
+        </section>
+
+        <section id="funciones" class="features">
+
+            <div class="features_header">
+                <h2>¿Qué se puede hacer con costify?</h2>
+
+                <p>
+                    Herramientas para optimizar
+                    la Gestion de costos de tus proyectos
+                </p>
+            </div>
+
+            <div class="features_container">
+                
+                <div class="features_card">
+                    
+                    <div class="features_icon">
+                        <i class="fa-solid fa-chart-column"></i>
+                    </div>
+
+                    <h3>Estudios de costos</h3>
+                    <p>
+                        Calcula cantidades y valores 
+                        de tus proyectos.
+                    </p>
+                </div>
+
+                <div class="features_card">
+
+                    <div class="features_icon">
+                        <i class="fa-solid fa-file-pdf"></i>
+                    </div>
+
+                    <h3>Documentos PDF</h3>
+                    <p>
+                        Genera documentos con
+                        tus estudios de costos.
+                    </p>
+                </div>
+
+                <div class="features_card">
+                    
+                    <div class="features_icon">
+                        <i class="fa-solid fa-plane"></i>
+                    </div>
+
+                    <h3>Costos de viajes</h3>
+                    <p>
+                        Calcula los costos de 
+                        desplazamiento entre ciudades y estima el 
+                        valor de tus viajes
+                    </p>
+                </div>
+
+                <div class="features_card">
+                    
+                    <div class="features_icon">
+                        <i class="fa-solid fa-folder"></i>
+                    </div>
+
+                    <h3>Catalogo de materiales</h3>
+                    <p>
+                        Organiza los materiales de tu proyecto
+                    </p>
+                </div>
+
+                <div class="features_card">
+                    
+                    <div class="features_icon">
+                        <i class="fa-solid fa-circle"></i>
+                    </div>
+
+                    <h3>Análisis porcentual</h3>
+                    <p>
+                        Analiza el presupuesto del proyecto y distribuyelo 
+                    </p>
+                </div>
+
+                <div class="features_card">
+                    
+                    <div class="features_icon">
+                        <i class="fa-solid fa-cloud"></i>
+                    </div>
+
+                    <h3>Guardado de estudios</h3>
+                    <p>
+                        Guarda tus avances presupuestales
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section 
+            class="calculator"
+            id="calculator"
+        
+        >
+
+        <div class="calculator_header">
+            <h2>Calcula tus costos</h2>
+            <p>
+                Calcula el valor de tus 
+                productos o servicios.
+            </p>
+        </div>
+
+        <div class="calculator_container">
+
+            <div class="budget_header">
+                
+                <div class="budget_header_info">
+                    <span class="budget_tag">SIMULACIÒN DE PRESUPUESTO</span>
+                    <h3>Control de presupuesto</h3>
+                    <p>Gestiona los costos de tu proyecto</p>
+                </div>
+
+                <div class="budget_amount">
+
+                <span>presupuesto establecido</span>
+                <strong id="presupuesto">
+                    $5.000.000
+                </strong>
+                <small>COP * Valor fijo</small>
+
+            </div>
+
+            </div>
+
+            
+
+            
+    <div class="budget_dashboard_grid">
+            
+
+            </div>
+
+            <div class="budget_sidebar">
+                <div class="material_form">
+
+                <div class="material_form_header">
+
+                    <div class="material_form_heading">
+                        <span class="section_tag">
+                        GESTIÓN DE MATERIALES
+                    </span>
+
+                    <div class="material_form_title">
+
+                        <div class="material_form_icon">
+                            <i class="fa-solid fa-boxes-stacked"></i>
+                        </div>
+
+                        <h3>Agregar materiales</h3>
+
+                    </div>  
+
+                    
+
+                    <p>
+                        Registra los materiales de
+                        tu proyecto
+                    </p>
+                    </div>
+
+                    
+
+                </div>
+
+                
+            
+
+            <div class="material_field">
+
+                <div class="calculator_field">
+
+                    <label for="material">Selecciona</label>
+
+                    <select id="material">
+
+                        <option value="">Selecciona un material</option>
+                        <option value="cemento">Cemento</option>
+                        <option value="Acero">Acero</option>
+                        <option value="Arena">Arena</option>
+                        <option value="Gravilla">Gravilla</option>
+                        <option value="Ladrillo">Ladrillo</option>
+                        <option value="Pintura">Pintura</option>
+                        <option value="otro">otro</option>
+                          
+                    </select>     
+                </div>
+
+                <div class="calculator_field">
+                    <label for="unidad">Unidad de medida</label>
+
+                    <select id="unidad">
+
+                        <option value="">Selecciona</option>
+                        <option value="unidad">Unidad</option>
+                        <option value="kg">Kilogramo</option>
+                        <option value="bulto">Bulto</option>
+                        <option value="m²">Metro cúbico (m²)</option>
+                        <option value="m³">Metro cuadrado (m³)</option>
+                        <option value="metro lineal">Metro lineal (m)</option>
+
+                    </select>
+
+                </div>
+
+                <div class="calculator_field">
+                    <label for="cantidad">Cantidad</label>
+
+                    <input 
+                    
+                    type="number"
+                    id="cantidad"
+                    min="1"
+                    placeholder="Ej: 10"
+                    >
+
+                </div>
+
+                <div class="calculator_field">
+                    <label for="valor">Valor unitario (COP)</label>
+
+                    <input 
+                    
+                    type="number"
+                    id="valor"
+                    min="0"
+                    placeholder="Ej: 50000"
+                    >
+                </div>
+
+            </div>
+
+                <button
+                
+                    type="button"
+                    id="agregar_material"
+                    class="material_button"
+                
+                >
+            
+                    <i class="fa-solid fa-plus"></i>
+                    Agregar material
+                </button>
+
+            </div>
+            
+        <div class="budget_summary">
+
+            <div class="budget_summary_header">
+                <span class="section_tag">Analisis financiero</span>
+                <h3>Resumen del presupuesto</h3>
+                <p>Visualiza el estado de los costos de tu proyecto</p>
+            </div>
+
+            <!-- GRafico cirular-->
+
+            <div class="budget_chart_container">
+
+                <div class="budget_chart" id="grafico-presupuesto">
+                    <div class="budget_chart_content">
+                        <strong id="porcentaje-utilizado">0%</strong>
+                        <span>Utilizado</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="budget_details">
+
+                <div class="budget_details_item">
+                    <span>
+                        <i class="fa-solid fa-circle"></i>
+                        Presupuesto inicial
+                    </span>
+                    <strong>5.000.000</strong>
+                </div>
+
+                <div class="budget_details_item">
+                    <span>
+                        <i class="fa-solid fa-circle"></i>
+                        Total acumulado
+                    </span>
+                    <strong id="subtotal">$0</strong>
+                </div>
+
+                <div class="budget_details_item">
+                   <span>
+                    <i class="fa-solid fa-circle"></i>
+                    Presupuesto disponible
+                   </span>
+                   <strong id="presupuesto-restante">$5.000.000</strong>
+                </div>
+
+            </div>
+
+            <div class="budget_alert" id="alerta-presupuesto" hidden>
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <span id="mensaje-presupuesto"></span>
+            </div>
+
+        </div>
+
+        </div>
+
+    <div class="materials_table">
+
+                <div class="materials_table_header">
+
+                    <div>
+                        
+                        <span class="section_tag">REGISTRO DE COSTOS</span>
+
+                        <h3>Materiales agregados</h3>
+
+                        <p>Consulta los materiales registrados en el proyecto</p>
+
+                    </div>
+
+                    <span class="materials_counter" id="contador-materiales">
+                        0 materiales
+                    </span>
+
+                </div>
+
+                <div class="materials_table_wrapper">
+
+                    <table>
+                        
+                        <thead>
+                            <tr>
+                                <th>Material</th>
+                                <th>Cantidad</th>
+                                <th>Unidad</th>
+                                <th>Valor unitario</th>
+                                <th>Total</th>
+                                <th>Acción</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="lista-materiales">
+                            <tr>
+                                <td colspan="6" class="table_empty">
+                                    <i class="fa-solid fa-box-open"></i>
+
+                                    <p>Aún no has registrado material.</p>
+
+                                    <small>
+                                        Comienza registrando tu primer material.
+                                    </small>
+
+                                </td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+            </div>        
+
+    </div>
+            
+    <div>
+
+    </div>
+
+        </section>
+
+    <section class="versions" id="versiones">
+
+        <div class="versions_header">
+            <h2>Elige tu experiencia</h2>
+            <p>
+                Herramienta diseñada para optimizar tu
+                gestión de costos
+            </p>
+        </div>
+
+        <div class="versions_container">
+
+            <!--VERSION DE PRUEBA-->
+
+            <article class="version_card">
+
+                <div class="version_side demo_side">
+
+                    <i class="fa-solid fa-calculator"></i>
+
+                    <h3>DEMO</h3>
+
+                    <span>Version gratuita</span>
+
+                </div>
+                 <div class="version_info">
+                    <span class="version_level">
+                        VERSIÓN BÁSICA
+                    </span>
+
+                    <h3>Costify Demo</h3>
+
+                    <p>
+                        Comienza a organizar tus costos con 
+                        herramientas esenciales para tus proyectos.
+                    </p>
+
+                    <ul>
+                        <li>Calculadora de costos</li>
+                        <li>Registro de materiales</li>
+                        <li>Visualización de presupuesto</li>
+                    </ul>
+
+                    <a href="#calculator" class="version_button">
+                        Explorar Demo
+                    </a>
+
+                 </div>
+
+            </article>
+
+            <!--VERSION PREMIUM-->
+
+            <article class="version_card">
+
+    <!-- Franja lateral Premium -->
+    <div class="version_side premium_side">
+
+        <i class="fa-solid fa-crown"></i>
+
+        <h3>PREMIUM</h3>
+
+        <span>Versión avanzada</span>
+
+    </div>
+
+    <!-- Información Premium -->
+    <div class="version_info">
+
+        <span class="version_level">
+            VERSIÓN AVANZADA
+        </span>
+
+        <h3>Costify Premium</h3>
+
+        <p>
+            Lleva la gestión de costos a otro nivel.
+        </p>
+
+        <ul>
+            <li>Estudios de costos completos</li>
+            <li>Historial y almacenamiento de estudios</li>
+            <li>Exportación de documentos PDF</li>
+            <li>Gestión avanzada de materiales</li>
+        </ul>
+
+        <a href="#contacto" class="version_button">
+            Conocer Premium
+        </a>
+
+    </div>
+
+</article>
+
+        </div>
+
+    </section>
+
+    <footer id="contacto" class="footer">
+
+        <div class="footer_content">
+            
+            <div class="footer_column">
+                <h3>Costify</h3>
+                <p>Optimiza tus costos</p>
+
+                <img src="assets/costify_logo_transparente.png" alt="logo de costify">
+
+            </div>
+
+            <div class="footer_column">
+                <h3>Explora</h3>
+
+                <a href="#inicio">Inicio</a>
+                <a href="#funciones">Caracteristicas</a>
+                <a href="#calculator">Calculadora</a>
+
+            </div>
+
+            <div class="footer_column">
+                    <h3>Contacto</h3>
+        
+                        <p>
+                            <i class="fa-solid fa-envelope"></i>
+                            Atención al cliente
+                        </p>
+
+                        <p class="footer_contact">
+                            <i class="fa-solid fa-headset"></i>
+                            Soporte técnico
+                        </p>
+
+                    <h3>Sígenos</h3>
+                
+                    <div class="footer_social">
+
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    
+                    </div>
+
+
+            </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer_bottom">
+            <h3>&copy; Costify 2026</h3>
+        </div>
+
+    </footer>
+
+    <script src="main/main.js"></script>
+
+</body>
+</html>
